@@ -49,6 +49,10 @@ export class PastelesService {
   private terminoBusquedaSubject = new BehaviorSubject<string>('');
   terminoBusqueda$ = this.terminoBusquedaSubject.asObservable();
 
+  // Array para almacenar el historial de búsquedas
+  private historialBusquedas: string[] = [];
+  historialBusquedas$ = new BehaviorSubject<string[]>(this.historialBusquedas);
+
   constructor() { }
 
   // Método para obtener todos los pasteles
@@ -66,6 +70,19 @@ export class PastelesService {
   // Método para actualizar el término de búsqueda
   actualizarTerminoBusqueda(termino: string) {
     this.terminoBusquedaSubject.next(termino);
+    this.agregarAlHistorial(termino); // Agregar la búsqueda al historial
   }
 
+  // Método para agregar una búsqueda al historial
+  private agregarAlHistorial(termino: string) {
+    if (termino.trim() && !this.historialBusquedas.includes(termino)) {
+      this.historialBusquedas.unshift(termino); // Agregar al inicio del array
+      this.historialBusquedas$.next(this.historialBusquedas); // Notificar a los suscriptores
+    }
+  }
+
+  // Método para obtener el historial de búsquedas
+  getHistorialBusquedas() {
+    return this.historialBusquedas;
+  }
 }
