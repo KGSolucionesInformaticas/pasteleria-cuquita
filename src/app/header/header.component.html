@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #915817;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/Pastelería Cuquita.jpg" alt="" width="80" height="60" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" id="colornav" href="/inicio" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="colornav" href="/ubicacion" aria-current="page">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="colornav" href="/preguntasfrecuentes" aria-current="page">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="colornav" href="/conoce-al-equipo" aria-current="page">Conoce al equipo</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" (ngSubmit)="buscarPasteles()">
+          <input
+            class="form-control custom-search-input me-2"
+            type="search"
+            placeholder="Buscar pasteles..."
+            aria-label="Buscar"
+            [(ngModel)]="terminoBusqueda"
+            name="terminoBusqueda"
+            list="historialBusquedas"
+          >
+          <datalist id="historialBusquedas">
+            <option *ngFor="let busqueda of historialBusquedas" [value]="busqueda"></option>
+          </datalist>
+          <button class="btn custom-search-button" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+</nav>
