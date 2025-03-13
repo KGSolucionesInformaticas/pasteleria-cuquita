@@ -12,11 +12,11 @@
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #ffffff;
 }
 
 .navbar-toggler {

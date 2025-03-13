@@ -21,11 +21,11 @@
 }
 
 .contenedor .contacto{
-    background-color: rgb(87, 189, 230);
+    background-color: rgb(230, 170, 87);
     color: white;
 }
 .contenedor .suscribete{
-    background-color: rgb(8, 111, 152);
+    background-color: rgb(152, 92, 8);
     color: white;
     grid-row: span 2;
 }

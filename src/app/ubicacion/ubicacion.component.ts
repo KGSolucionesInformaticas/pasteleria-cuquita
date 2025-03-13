@@ -15,7 +15,7 @@ export class UbicacionComponent implements OnInit {
   }
 
   private initMap(): void {
-    const map = L.map('map').setView([21.8853, -102.2916], 15); // Coordenadas de Aguascalientes
+    const map = L.map('map').setView([21.857071, -102.281159], 15); // Coordenadas de Aguascalientes
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
@@ -32,7 +32,7 @@ export class UbicacionComponent implements OnInit {
     });
 
     // Marcador de la pastelería
-    const marker = L.marker([21.8853, -102.2916], { icon: iconDefault }).addTo(map);
+    const marker = L.marker([21.857071, -102.281159], { icon: iconDefault }).addTo(map);
     marker.bindPopup('<b>Pastelería Cuquita</b><br>¡El mejor sabor en Aguascalientes!').openPopup();
   }
 }
