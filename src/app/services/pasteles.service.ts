@@ -14,7 +14,7 @@ export class PastelesService {
       precio: 230.00,
       precioOriginal: 280.00,
       promocion: 'Hasta 12 meses sin intereses',
-      imagen: '../assets/Pastel8a10personas.jpg'
+      imagen: './assets/Pastel8a10personas.jpg'
     },
     {
       nombre: 'Pastel de Vainilla',
@@ -23,7 +23,7 @@ export class PastelesService {
       precio: 200.00,
       precioOriginal: 250.00,
       promocion: 'Hasta 12 meses sin intereses',
-      imagen: '../assets/Pastel8a10personas.jpg'
+      imagen: './assets/Pastel8a10personas.jpg'
     },
     {
       nombre: 'Pastel de Frutas',
@@ -32,7 +32,7 @@ export class PastelesService {
       precio: 280.00,
       precioOriginal: 330.00,
       promocion: 'Hasta 12 meses sin intereses',
-      imagen: '../assets/Pastel8a10personas.jpg'
+      imagen: './assets/Pastel8a10personas.jpg'
     },
     {
       nombre: 'Pastel de Tres Leches',
@@ -41,7 +41,7 @@ export class PastelesService {
       precio: 260.00,
       precioOriginal: 310.00,
       promocion: 'Hasta 12 meses sin intereses',
-      imagen: '../assets/Pastel8a10personas.jpg'
+      imagen: './assets/Pastel8a10personas.jpg'
     }
   ];
 
