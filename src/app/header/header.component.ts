@@ -12,12 +12,21 @@ import { Router } from '@angular/router'; // Importar Router
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+
   terminoBusqueda: string = '';
+  historialBusquedas: string[] = []; // Array para almacenar el historial
 
   constructor(
     private pastelesService: PastelesService,
     private router: Router // Inyectar Router
   ) {}
+
+  ngOnInit() {
+    // Suscribirse al historial de búsquedas
+    this.pastelesService.historialBusquedas$.subscribe(historial => {
+      this.historialBusquedas = historial;
+    });
+  }
 
   // Método para buscar pasteles
   buscarPasteles() {
