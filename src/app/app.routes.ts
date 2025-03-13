@@ -6,9 +6,9 @@ import { PreguntasfrecuentesComponent } from './preguntasfrecuentes/preguntasfre
 
 export const routes: Routes = [
     // Rutas de la aplicación (componentes)
-    { path: '', redirectTo: '#/inicio', pathMatch: 'full' },  // Ruta predeterminada
-    { path: '#/inicio', component: InicioComponent },         // Ruta del componente de inicio
-    { path: '#/ubicacion', component: UbicacionComponent },
-    { path: '#/preguntasfrecuentes', component: PreguntasfrecuentesComponent}, 
-    { path: '**', redirectTo: '#/inicio' }                    // Ruta para páginas no encontradas
+    { path: '', redirectTo: 'inicio', pathMatch: 'full' },  // Ruta predeterminada
+    { path: 'inicio', component: InicioComponent },         // Ruta del componente de inicio
+    { path: 'ubicacion', component: UbicacionComponent },
+    { path: 'preguntasfrecuentes', component: PreguntasfrecuentesComponent}, 
+    { path: '**', redirectTo: 'inicio' }                    // Ruta para páginas no encontradas
 ];
