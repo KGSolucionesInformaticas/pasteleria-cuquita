@@ -14,19 +14,19 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "docs/pasteleria-cuquita/", 
-            "index": "src/index.html",
-            "browser": "src/main.ts",
+            "index": "docs/index.html",
+            "browser": "docs/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "docs/favicon.ico",
+              "docs/assets"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "docs/styles.css"
             ],
             "scripts": []
           },
