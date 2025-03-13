@@ -3,11 +3,12 @@ import { PastelesService } from '../services/pasteles.service'; // Importar el s
 import { FormsModule } from '@angular/forms'; // Importar FormsModule
 import { CommonModule } from '@angular/common'; // Importar CommonModule
 import { Router } from '@angular/router'; // Importar Router
+import { RouterModule } from '@angular/router';  // ✅ Importa RouterModule
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
