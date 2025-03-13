@@ -7,9 +7,9 @@ import { PreguntasfrecuentesComponent } from './preguntasfrecuentes/preguntasfre
 
 export const routes: Routes = [
     // Rutas de la aplicación (componentes)
-    { path: '', redirectTo: '/pateleria-cuquita/inicio', pathMatch: 'full' },  // Ruta predeterminada
-    { path: '/pateleria-cuquita/inicio', component: InicioComponent },         // Ruta del componente de inicio
-    { path: '/pateleria-cuquita/ubicacion', component: UbicacionComponent },
-    { path: '/pateleria-cuquita/preguntasfrecuentes', component: PreguntasfrecuentesComponent}, 
-    { path: '**', redirectTo: '/pateleria-cuquita/inicio' }                    // Ruta para páginas no encontradas
+    { path: '', redirectTo: '/inicio', pathMatch: 'full' },  // Ruta predeterminada
+    { path: '/inicio', component: InicioComponent },         // Ruta del componente de inicio
+    { path: '/ubicacion', component: UbicacionComponent },
+    { path: '/preguntasfrecuentes', component: PreguntasfrecuentesComponent}, 
+    { path: '**', redirectTo: '/inicio' }                    // Ruta para páginas no encontradas
 ];
