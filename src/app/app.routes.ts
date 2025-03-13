@@ -16,8 +16,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, { useHash: true })],  // Habilita el modo Hash
+    imports: [RouterModule.forRoot(routes)],  // Sin el modo Hash
     exports: [RouterModule]
 })
-
 export class AppRoutingModule { }
