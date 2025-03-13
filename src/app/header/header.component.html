@@ -23,19 +23,14 @@
         </ul>
         <form class="d-flex" role="search" (ngSubmit)="buscarPasteles()">
           <input
-            class="form-control custom-search-input me-2"
-            type="search"
+            class="form-control custom-search-input me-2" 
             placeholder="Buscar pasteles..."
             aria-label="Buscar"
             [(ngModel)]="terminoBusqueda"
             name="terminoBusqueda"
-            list="historialBusquedas"
           >
-          <datalist class="historialbus" id="historialBusquedas">
-            <option *ngFor="let busqueda of historialBusquedas" [value]="busqueda"></option>
-          </datalist>
-          <button class="btn custom-search-button" type="submit">Buscar</button>
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
     </div>
-</nav>
+  </nav>

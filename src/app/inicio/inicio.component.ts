@@ -1,17 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { PastelesService } from '../services/pasteles.service'; // Importar el servicio
-
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css'] // Corrección aquí
+  styleUrls: ['./inicio.component.css']
 })
-export class InicioComponent {
+export class InicioComponent implements OnInit {
   pasteles: any[] = [];
   pastelesFiltrados: any[] = [];
 
