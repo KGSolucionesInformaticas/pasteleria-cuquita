@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { PastelesService } from '../services/pasteles.service'; // Importar el servicio
+import { Router } from '@angular/router'; // Importar Router para la navegación
 
 @Component({
   selector: 'app-inicio',
@@ -19,7 +20,10 @@ export class InicioComponent implements OnInit {
   precioMaximo: number = 2600; // Precio máximo inicial
   terminoBusqueda: string = '';
 
-  constructor(private pastelesService: PastelesService) {}
+  constructor(
+    private pastelesService: PastelesService,
+    private router: Router // Inyectar Router
+  ) {}
 
   ngOnInit() {
     // Obtener todos los pasteles al iniciar
@@ -76,5 +80,8 @@ export class InicioComponent implements OnInit {
 
     // Aplicar los filtros después de cambiar las categorías
     this.aplicarFiltros();
+  }
+  verMas(categoria: string) {
+    this.router.navigate(['/categoria', categoria]); // Redirige al componente de categoría
   }
 }

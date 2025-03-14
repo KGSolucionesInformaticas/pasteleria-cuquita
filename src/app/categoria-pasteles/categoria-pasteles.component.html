@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <h2>Pasteles de {{ categoria }}</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let pastel of pasteles">
+        <div class="card h-100">
+          <img [src]="pastel.imagen" class="card-img-top" alt="{{ pastel.nombre }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ pastel.nombre }}</h5>
+            <p class="card-text">{{ pastel.descripcion }}</p>
+            <p class="card-text">{{ pastel.betun }}</p>
+            <p class="card-text">{{ pastel.sabor1 }}</p>
+            <p class="card-text">{{ pastel.sabor2 }}</p>
+            <p class="card-text">{{ pastel.sabor3 }}</p>
+            <p class="text-success">Precio: <strong>${{ pastel.precio }}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
