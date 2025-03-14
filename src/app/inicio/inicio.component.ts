@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { PastelesService } from '../services/pasteles.service'; // Importar el servicio
 import { Router } from '@angular/router'; // Importar Router para la navegación
 
+// Declara bootstrap como una variable global
+declare const bootstrap: any;
+
 @Component({
   selector: 'app-inicio',
   standalone: true,
@@ -35,6 +38,13 @@ export class InicioComponent implements OnInit {
       this.terminoBusqueda = termino;
       this.aplicarFiltros();
     });
+
+    // Abrir el modal automáticamente al cargar la página
+    const modalElement = document.getElementById('alertaModal');
+    if (modalElement) {
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
   }
 
   // Método para aplicar los filtros

@@ -1,18 +1,66 @@
 <div class="container-fluid p-0">
   <div class="row justify-content-center" id="titulopasteleria">
-      <div class="col-md-12 text-center mb-4" style="background-color: #f8f9fa; padding: 20px;">
-          <h1 class="display-4" style="color: #915817;">Pastelería Cuquita</h1>
-          <p class="lead">Descubre nuestra deliciosa selección de pasteles.</p>
-      </div>
+    <div class="col-md-12 text-center mb-4" style="background-color: #f8f9fa; padding: 20px;">
+      <h1 class="display-4" style="color: #915817;">Pastelería Cuquita</h1>
+      <p class="lead">Descubre nuestra deliciosa selección de pasteles.</p>
+    </div>
   </div>
+
   <div class="row justify-content-center">
-      <div class="col-md-12">
-          <div class="image-container">
-              <img src="./assets/PastelesInicio.jpeg" class="animated-image" alt="Pastel de 8 a 10 personas">
-          </div>
+    <div class="col-md-12">
+      <div class="image-container">
+        <img src="./assets/PastelesInicio.jpeg" class="animated-image" alt="Pastel de 8 a 10 personas">
       </div>
+    </div>
   </div>
 </div>
+
+<!-- Sección de ingredientes -->
+<div class="row justify-content-center mt-4">
+  <div class="col-md-8 text-center" id="ingredientes">
+    <div class="card p-4" style="background-color: #f8f9fa; border: none;">
+      <h3 style="color: #915817;">Nuestros Ingredientes</h3>
+      <p>
+        Todos nuestros productos están elaborados con mantequilla 100% La Gloria.
+      </p>
+      <p>
+        El pan de nuestros pasteles, cupcakes y panques está hecho con mantequilla y trozos de nuez.
+      </p>
+      <p>
+        Nuestro betún está hecho a base de mantequilla con sabor limón y mantequilla con chocolate.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Botón para abrir el modal (opcional) -->
+<div class="text-center mt-3">
+  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#alertaModal">
+    Ver alerta importante
+  </button>
+</div>
+
+<!-- Alerta Modal de Bootstrap -->
+<div class="modal fade" id="alertaModal" tabindex="-1" aria-labelledby="alertaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content alerta-modal">
+      <div class="modal-header alerta-header">
+        <h5 class="modal-title" id="alertaModalLabel">Aviso importante</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body alerta-body">
+        🚨🚨 Los apartados se solicitará dejar anticipo ya sea por transferencia o llevándolo a nuestra ubicación.
+        Esta medida se implementa debido a que nos han dejado con producto apartado y después ya no se puede vender. 🚨
+        <br><br>
+        <strong>NOTA:</strong> Mandar mensaje para checar disponibilidad en agenda.
+      </div>
+      <div class="modal-footer alerta-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="container mt-4">
   <div class="row">

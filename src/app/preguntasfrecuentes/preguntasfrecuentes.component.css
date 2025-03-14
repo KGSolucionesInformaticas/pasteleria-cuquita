@@ -19,3 +19,10 @@
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+#titulopasteleria {
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 20px; /* Espacio debajo del carousel */
+}

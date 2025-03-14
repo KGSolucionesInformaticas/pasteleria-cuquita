@@ -1,3 +1,47 @@
+<!-- Contenedor del botón de regresar -->
+<div class="regresar-btn-container">
+    <a [routerLink]="['/inicio']" class="btn btn-light">
+      <i class="bi bi-arrow-left"></i> Regresar
+    </a>
+</div>
+
+<div class="container-fluid p-0">
+    <div class="row justify-content-center" id="titulopasteleria">
+      <div class="col-md-12 text-center mb-4" style="background-color: #f8f9fa; padding: 20px;">
+        <h1 class="display-4" style="color: #915817;">Pastelería Cuquita</h1>
+        <p class="lead">Descubre nuestra deliciosa selección de pasteles.</p>
+      </div>
+    </div>
+</div>
+
+<!-- Botón para abrir el modal (opcional) -->
+<div class="text-center mt-3">
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#alertaModal">
+      Ver alerta importante
+    </button>
+</div>
+  
+<!-- Alerta Modal de Bootstrap -->
+<div class="modal fade" id="alertaModal" tabindex="-1" aria-labelledby="alertaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content alerta-modal">
+        <div class="modal-header alerta-header">
+          <h5 class="modal-title" id="alertaModalLabel">Aviso importante</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body alerta-body">
+          🚨🚨 Los apartados se solicitará dejar anticipo ya sea por transferencia o llevándolo a nuestra ubicación.
+          Esta medida se implementa debido a que nos han dejado con producto apartado y después ya no se puede vender. 🚨
+          <br><br>
+          <strong>NOTA:</strong> Mandar mensaje para checar disponibilidad en agenda.
+        </div>
+        <div class="modal-footer alerta-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+</div>
+
 <div class="centrado">
     <h2>Nuestros Productos</h2>
     <p class="text-muted">({{ pastelesFiltrados.length }} resultados)</p>

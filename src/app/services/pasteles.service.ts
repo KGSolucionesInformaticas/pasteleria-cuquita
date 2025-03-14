@@ -108,6 +108,22 @@ export class PastelesService {
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
+      nombre: 'Polvorones de chocolate, naranja y vainilla de 300grs',
+      categoria: 'Polvorones de 300grs',
+      descripcion: 'Deliciosos polvorones de chocolate, naranja y vainilla de 300grs',
+      precio: 50.00,
+      imagen: './assets/Polvoronesde300grs.jpg',
+      mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
+    },
+    {
+      nombre: 'Cupcakes 6 piezas',
+      categoria: 'Cupcakes 6 piezas',
+      descripcion: 'Deliciosos cupcakes 6 piezas',
+      precio: 100.00,
+      imagen: './assets/Cupcakes.jpg',
+      mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
+    },
+    {
       nombre: 'Galletas besos de nuez de 500grs',
       categoria: 'Galletas besos de nuez',
       descripcion: 'Deliciosas galletas besos de nuez de 500grs',

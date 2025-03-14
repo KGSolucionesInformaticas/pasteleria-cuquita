@@ -2,11 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PastelesService } from '../services/pasteles.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';  // Importa RouterModule
+import { FormsModule } from '@angular/forms';
+
+// Declara bootstrap como una variable global
+declare const bootstrap: any;
 
 @Component({
   selector: 'app-categoria-pasteles',
   standalone: true,
-  imports: [CommonModule],
+  imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './categoria-pasteles.component.html',
   styleUrl: './categoria-pasteles.component.css'
 })
@@ -35,6 +40,13 @@ export class CategoriaPastelesComponent implements OnInit {
       this.terminoBusqueda = termino;
       this.filtrarPasteles(); // Filtrar los pasteles cuando cambia el término de búsqueda
     });
+
+    // Abrir el modal automáticamente al cargar la página
+    const modalElement = document.getElementById('alertaModal');
+    if (modalElement) {
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
   }
 
   // Método para filtrar los pasteles según el término de búsqueda

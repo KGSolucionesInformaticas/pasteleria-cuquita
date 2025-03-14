@@ -94,8 +94,55 @@
   object-fit: cover;
   animation: slideIn 5s forwards; /* Duración de la animación */
 }
+
 #colorTarjeta{
   background-color: #ffe6c9;
+}
+
+#ingredientes .card {
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#ingredientes h3 {
+  font-size: 1.75rem; /* Tamaño de fuente más grande */
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+#ingredientes p {
+  font-size: 1.1rem; /* Tamaño de fuente más grande */
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.alerta-modal {
+  background-color: #f5e6da; /* Color cremita */
+  border: 2px solid #915817; /* Color café */
+  border-radius: 10px;
+}
+
+.alerta-header {
+  background-color: #915817; /* Color café */
+  color: #fff; /* Texto blanco */
+  border-bottom: 2px solid #7b4c2b; /* Café oscuro */
+}
+
+.alerta-body {
+  color: #603e2e; /* Café más oscuro para el texto */
+  font-size: 1.1rem;
+}
+
+.alerta-footer {
+  background-color: #f5e6da; /* Color cremita */
+}
+
+.alerta-footer .btn-secondary {
+  background-color: #915817; /* Botón café */
+  color: #fff;
+  border: none;
+}
+
+.alerta-footer .btn-secondary:hover {
+  background-color: #7b4c2b; /* Café oscuro al pasar el mouse */
 }
 
 @keyframes slideIn {
