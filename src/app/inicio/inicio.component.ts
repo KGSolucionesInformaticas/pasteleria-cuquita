@@ -26,10 +26,10 @@ export class InicioComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // Obtener todos los pasteles al iniciar
-    this.pasteles = this.pastelesService.getPasteles();
+    // Obtener pasteles para el inicio
+    this.pasteles = this.pastelesService.getPastelesParaInicio();
     this.pastelesFiltrados = this.pasteles;
-
+  
     // Suscribirse al término de búsqueda
     this.pastelesService.terminoBusqueda$.subscribe(termino => {
       this.terminoBusqueda = termino;

@@ -94,6 +94,9 @@
   object-fit: cover;
   animation: slideIn 5s forwards; /* Duración de la animación */
 }
+#colorTarjeta{
+  background-color: #ffe6c9;
+}
 
 @keyframes slideIn {
   0% {

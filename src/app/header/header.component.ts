@@ -32,6 +32,13 @@ export class HeaderComponent {
   // Método para buscar pasteles
   buscarPasteles() {
     this.pastelesService.actualizarTerminoBusqueda(this.terminoBusqueda);
-    this.router.navigate(['/inicio']); // Redirigir al componente de inicio
+
+    // Verificar la ruta actual
+    const rutaActual = this.router.url;
+
+    // Redirigir solo si no está en el componente de categoría
+    if (!rutaActual.startsWith('/categoria')) {
+      this.router.navigate(['/inicio']); // Redirigir al componente de inicio
+    }
   }
 }

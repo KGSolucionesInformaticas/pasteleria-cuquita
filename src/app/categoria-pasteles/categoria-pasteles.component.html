@@ -1,17 +1,19 @@
+<div class="centrado">
+    <h2>Nuestros Productos</h2>
+    <p class="text-muted">({{ pastelesFiltrados.length }} resultados)</p>
+</div>
 <div class="container mt-4">
-    <h2>Pasteles de {{ categoria }}</h2>
+    <h2>{{ categoria }}</h2>
     <div class="row">
-      <div class="col-md-4 mb-4" *ngFor="let pastel of pasteles">
-        <div class="card h-100">
+      <div class="col-sm-6 col-md-3 mb-4" *ngFor="let pastel of pastelesFiltrados">
+        <div class="card h-100" id="colorTarjeta">
           <img [src]="pastel.imagen" class="card-img-top" alt="{{ pastel.nombre }}">
           <div class="card-body">
             <h5 class="card-title">{{ pastel.nombre }}</h5>
-            <p class="card-text">{{ pastel.descripcion }}</p>
-            <p class="card-text">{{ pastel.betun }}</p>
-            <p class="card-text">{{ pastel.sabor1 }}</p>
-            <p class="card-text">{{ pastel.sabor2 }}</p>
-            <p class="card-text">{{ pastel.sabor3 }}</p>
-            <p class="text-success">Precio: <strong>${{ pastel.precio }}</strong></p>
+            <p class="card-text"><strong>{{ pastel.descripcion }}</strong></p>
+            <p class="card-text"><strong>{{ pastel.betun }}</strong></p>
+            <p class="card-text"><strong>{{ pastel.sabor }}</strong></p>
+            <p class="text-success"><strong>Precio: ${{ pastel.precio }}</strong></p>
           </div>
         </div>
       </div>

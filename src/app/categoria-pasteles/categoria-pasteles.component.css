@@ -1,0 +1,12 @@
+.card-img-top {
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin distorsionarse */
+}
+.centrado{
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+#colorTarjeta{
+    background-color: #ffe6c9;
+}

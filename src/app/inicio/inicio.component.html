@@ -18,7 +18,7 @@
   <div class="row">
     <!-- Filtro en el lado izquierdo -->
     <div class="col-md-3">
-      <div class="card p-3 sticky-filter">
+      <div class="card p-3 sticky-filter" id="colorTarjeta">
         <h5>Filtros</h5>
         
         <!-- Filtro de Categoría con Checkboxes -->
@@ -66,6 +66,18 @@
                    (change)="onCategoriaChange($event, 'Pastel de 100 a 120')">
             <label class="form-check-label" for="categoria-100-120">Pastel de 100 a 120 personas</label>
           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Galletas de mantequilla 300 grs" value="Galletas de mantequilla 300 grs"
+                   [checked]="categoriasSeleccionadas.includes('Galletas de mantequilla 300 grs')"
+                   (change)="onCategoriaChange($event, 'Galletas de mantequilla 300 grs')">
+            <label class="form-check-label" for="Galletas de mantequilla 300 grs">Galletas de mantequilla 300 grs</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Galletas de mantequilla 500 grs" value="Galletas de mantequilla 500 grs"
+                   [checked]="categoriasSeleccionadas.includes('Galletas de mantequilla 500 grs')"
+                   (change)="onCategoriaChange($event, 'Galletas de mantequilla 500 grs')">
+            <label class="form-check-label" for="Galletas de mantequilla 500 grs">Galletas de mantequilla 500 grs</label>
+          </div>
         </div>
 
         <!-- Filtro de Precio -->
@@ -84,16 +96,14 @@
 
       <div class="row">
         <div class="col-md-4 mb-4" *ngFor="let pastel of pastelesFiltrados">
-          <div class="card h-100">
+          <div class="card h-100" id="colorTarjeta">
             <img [src]="pastel.imagen" class="card-img-top" alt="{{ pastel.nombre }}">
             <div class="card-body">
               <h5 class="card-title">{{ pastel.nombre }}</h5>
-              <p class="card-text">{{ pastel.descripcion }}</p>
-              <p class="card-text">{{ pastel.betun }}</p>
-              <p class="card-text">{{ pastel.sabor1 }}</p>
-              <p class="card-text">{{ pastel.sabor2 }}</p>
-              <p class="card-text">{{ pastel.sabor3 }}</p>
-              <p class="text-success">Precio: <strong>${{ pastel.precio }}</strong></p>
+              <p class="card-text"><strong>{{ pastel.descripcion }}</strong></p>
+              <p class="card-text"><strong>{{ pastel.betun }}</strong></p>
+              <p class="card-text"><strong>{{ pastel.sabor }}</strong></p>
+              <p class="text-success"><strong>Precio: ${{ pastel.precio }}</strong></p>
               <button class="btn btn-primary" (click)="verMas(pastel.categoria)">Ver Más</button>
             </div>
           </div>
