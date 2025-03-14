@@ -8,40 +8,70 @@ export class PastelesService {
 
   private pasteles = [
     {
-      nombre: 'Pastel de Chocolate',
-      categoria: 'Pasteles de Chocolate',
-      descripcion: 'Delicioso pastel de chocolate con cubierta de ganache.',
+      nombre: 'Pastel de 8 a 10 personas',
+      categoria: 'Pastel de 8 a 10',
+      descripcion: 'Delicioso pastel de 8 a 10 personas, decoración de la casa.',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor1: '1.-Chocolate.',
+      sabor2: '2.-Limón.',
+      sabor3: '3.-Mixto.',
       precio: 230.00,
-      precioOriginal: 280.00,
-      promocion: 'Hasta 12 meses sin intereses',
       imagen: './assets/Pastel8a10personas.jpg'
     },
     {
-      nombre: 'Pastel de Vainilla',
-      categoria: 'Pasteles de Vainilla',
-      descripcion: 'Pastel esponjoso de vainilla con relleno de crema.',
-      precio: 200.00,
-      precioOriginal: 250.00,
-      promocion: 'Hasta 12 meses sin intereses',
-      imagen: './assets/Pastel8a10personas.jpg'
+      nombre: 'Pastel de 12 a 15 personas',
+      categoria: 'Pastel de 12 a 15',
+      descripcion: 'Delicioso pastel de 8 a 10 personas, decoración de la casa.',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor1: '1.-Chocolate.',
+      sabor2: '2.-Limón.',
+      sabor3: '3.-Mixto.',
+      precio: 330.00,
+      imagen: './assets/Pastel12a15personas1.jpg'
     },
     {
-      nombre: 'Pastel de Frutas',
-      categoria: 'Pasteles de Frutas',
-      descripcion: 'Pastel decorado con frutas frescas y crema batida.',
-      precio: 280.00,
-      precioOriginal: 330.00,
-      promocion: 'Hasta 12 meses sin intereses',
-      imagen: './assets/Pastel8a10personas.jpg'
+      nombre: 'Pastel de 18 a 20 personas',
+      categoria: 'Pastel de 18 a 20',
+      descripcion: 'Delicioso pastel de 18 a 20 personas, decoración de la casa.',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor1: '1.-Chocolate.',
+      sabor2: '2.-Limón.',
+      sabor3: '3.-Mixto.',
+      precio: 420.00,
+      imagen: './assets/Pastel18a20personas1.jpg'
     },
     {
-      nombre: 'Pastel de Tres Leches',
-      categoria: 'Pasteles Clásicos',
-      descripcion: 'Pastel suave y húmedo bañado en tres leches.',
-      precio: 260.00,
-      precioOriginal: 310.00,
-      promocion: 'Hasta 12 meses sin intereses',
-      imagen: './assets/Pastel8a10personas.jpg'
+      nombre: 'Pastel de 1/4 plancha cuadrado de 25 a 30 personas',
+      categoria: 'Pastel de 25 a 30',
+      descripcion: 'Delicioso pastel de 1/4 plancha cuadrado rendimiento es de 25 a 30 personas, decoración de la casa',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor1: '1.-Chocolate.',
+      sabor2: '2.-Limón.',
+      sabor3: '3.-Mixto.',
+      precio: 600.00,
+      imagen: './assets/Pastel25a30personas.jpg'
+    },
+    {
+      nombre: 'Pastel de 1/2 plancha cuadrado de 50 a 60 personas',
+      categoria: 'Pastel de 50 a 60',
+      descripcion: 'Delicioso pastel de 1/2 plancha cuadrado rendimiento es de 50 a 60 personas, decoración de la casa',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor1: '1.-Chocolate.',
+      sabor2: '2.-Limón.',
+      sabor3: '3.-Mixto.',
+      precio: 1250.00,
+      imagen: './assets/Pastel50a60personas.jpg'
+    },
+    {
+      nombre: 'Pastel plancha entera cuadrado de 100 a 120 personas',
+      categoria: 'Pastel de 100 a 120',
+      descripcion: 'Delicioso pastel plancha entera cuadrado rendimiento es de 100 a 120 personas, decoración de la casa',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor1: '1.-Chocolate.',
+      sabor2: '2.-Limón.',
+      sabor3: '3.-Mixto.',
+      precio: 2600.00,
+      imagen: './assets/Pastel50a60personas.jpg'
     }
   ];
 

@@ -29,3 +29,47 @@
     margin-right: 8%;
     margin-bottom: 20px; /* Espacio debajo del carousel */
 }
+
+
+
+/*Estilos de filtrado*/
+.sticky-filter {
+  position: -webkit-sticky; /* Para Safari */
+  position: sticky;
+  top: 20px; /* Ajusta este valor según sea necesario */
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #915817;
+  border-color: #915817;
+}
+
+.btn-primary:hover {
+  background-color: #7a4a13;
+  border-color: #7a4a13;
+}
