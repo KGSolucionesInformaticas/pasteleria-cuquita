@@ -43,13 +43,6 @@ export class CategoriaPastelesComponent implements OnInit {
       this.terminoBusqueda = termino;
       this.filtrarPasteles(); // Filtrar los pasteles cuando cambia el término de búsqueda
     });
-
-    // Abrir el modal automáticamente al cargar la página
-    const modalElement = document.getElementById('alertaModal');
-    if (modalElement) {
-      const modal = new bootstrap.Modal(modalElement);
-      modal.show();
-    }
   }
 
   // Método para filtrar los pasteles según el término de búsqueda
@@ -64,7 +57,7 @@ export class CategoriaPastelesComponent implements OnInit {
   }
 
   contactarParaPersonalizado(pastel: any) {
-    const phoneNumber = '4494189869'; // Reemplaza con tu número de WhatsApp
+    const phoneNumber = '4495137162'; // Reemplaza con tu número de WhatsApp
     const message = encodeURIComponent(
       `Hola, estoy interesado en el pastel: ${pastel.nombre}.\n` +
       `Descripción: ${pastel.descripcion}\n` +
