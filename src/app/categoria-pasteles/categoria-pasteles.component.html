@@ -60,8 +60,10 @@
             
             <!-- Mostrar precio o mensaje personalizado -->
             <ng-container *ngIf="pastel.esPersonalizado; else precioNormal">
-              <p class="text-warning"><strong>{{ pastel.personalizado }}</strong></p>
-              <button class="btn btn-success" (click)="contactarParaPersonalizado()">Contactar para decorado</button>
+              <p class="text-success"><strong>{{ pastel.personalizado }}</strong></p>
+              <button class="btn btn-success mt-2" (click)="contactarParaPersonalizado(pastel)">
+                <i class="bi bi-whatsapp"></i> Contactar para decorado
+              </button>
             </ng-container>
             <ng-template #precioNormal>
               <p class="text-success"><strong>Precio: ${{ pastel.precio }}</strong></p>

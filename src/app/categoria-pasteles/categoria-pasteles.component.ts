@@ -63,11 +63,15 @@ export class CategoriaPastelesComponent implements OnInit {
     }
   }
 
-  // En el componente InicioComponent
-  contactarParaPersonalizado() {
-    const numero = '4494189869';  // Reemplaza con tu número de WhatsApp
-    const mensaje = encodeURIComponent('Hola, quiero saber el precio del pastel personalizado.');
-    const url = `https://wa.me/${numero}?text=${mensaje}`;
-    window.open(url, '_blank');
+  contactarParaPersonalizado(pastel: any) {
+    const phoneNumber = '521234567890'; // Reemplaza con tu número de WhatsApp
+    const message = encodeURIComponent(
+      `Hola, estoy interesado en el pastel: ${pastel.nombre}.\n` +
+      `Descripción: ${pastel.descripcion}.\n` +
+      `Pueden ver la imagen aquí: ${pastel.imagen}\n` +
+      `Por favor, envíenme más información.`
+    );
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, '_blank'); // Abre en una nueva pestaña
   }
 }
