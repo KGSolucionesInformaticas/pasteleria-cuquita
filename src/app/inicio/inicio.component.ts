@@ -102,7 +102,7 @@ export class InicioComponent implements OnInit {
   }
   
   contactarParaPersonalizado(pastel: any) {
-    const phoneNumber = '521234567890'; // Reemplaza con tu número de WhatsApp
+    const phoneNumber = '4494189869'; // Reemplaza con tu número de WhatsApp
     const message = encodeURIComponent(
       `Hola, estoy interesado en el pastel: ${pastel.nombre}.\n` +
       `Descripción: ${pastel.descripcion}.\n` +
