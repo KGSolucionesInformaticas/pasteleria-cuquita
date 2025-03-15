@@ -22,6 +22,9 @@ export class InicioComponent implements OnInit {
   categoriasSeleccionadas: string[] = ['Todas']; // Array para múltiples selecciones
   precioMaximo: number = 2600; // Precio máximo inicial
   terminoBusqueda: string = '';
+  // En el componente InicioComponent
+  mostrarSoloPersonalizados: boolean = false;
+  
 
   constructor(
     private pastelesService: PastelesService,
@@ -48,9 +51,6 @@ export class InicioComponent implements OnInit {
       modal.show();
     }
   }
-
-  // En el componente InicioComponent
-  mostrarSoloPersonalizados: boolean = false;
 
   aplicarFiltros() {
     this.pastelesFiltrados = this.pasteles.filter(pastel => {
@@ -96,21 +96,19 @@ export class InicioComponent implements OnInit {
     // Aplicar los filtros después de cambiar las categorías
     this.aplicarFiltros();
   }
-
+  
   verMas(categoria: string) {
     this.router.navigate(['/categoria', categoria]); // Redirige al componente de categoría
   }
-  
+
   contactarParaPersonalizado(pastel: any) {
     const phoneNumber = '4494189869'; // Reemplaza con tu número de WhatsApp
     const message = encodeURIComponent(
       `Hola, estoy interesado en el pastel: ${pastel.nombre}.\n` +
-      `Descripción: ${pastel.descripcion}.\n` +
-      `Pueden ver la imagen aquí: ${pastel.imagen}\n` +
+      `Descripción: ${pastel.descripcion}\n` +
       `Por favor, envíenme más información.`
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, '_blank'); // Abre en una nueva pestaña
   }
-  
 }
