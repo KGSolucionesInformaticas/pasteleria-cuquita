@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-preguntasfrecuentes',
@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './preguntasfrecuentes.component.html',
   styleUrl: './preguntasfrecuentes.component.css'
 })
-export class PreguntasfrecuentesComponent {
-
+export class PreguntasfrecuentesComponent implements OnInit{
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

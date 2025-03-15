@@ -27,6 +27,9 @@ export class CategoriaPastelesComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+
+    window.scrollTo(0, 0);
+
     this.route.params.subscribe((params: { [key: string]: string }) => {
       this.categoria = params['nombre'];
       this.pasteles = this.pastelesService.getPasteles().filter(pastel =>
@@ -58,5 +61,13 @@ export class CategoriaPastelesComponent implements OnInit {
     } else {
       this.pastelesFiltrados = this.pasteles; // Mostrar todos los pasteles si no hay término de búsqueda
     }
+  }
+
+  // En el componente InicioComponent
+  contactarParaPersonalizado() {
+    const numero = '4494189869';  // Reemplaza con tu número de WhatsApp
+    const mensaje = encodeURIComponent('Hola, quiero saber el precio del pastel personalizado.');
+    const url = `https://wa.me/${numero}?text=${mensaje}`;
+    window.open(url, '_blank');
   }
 }

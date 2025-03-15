@@ -29,6 +29,8 @@ export class InicioComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    window.scrollTo(0, 0);
+
     // Obtener pasteles para el inicio
     this.pasteles = this.pastelesService.getPastelesParaInicio();
     this.pastelesFiltrados = this.pasteles;
@@ -47,15 +49,18 @@ export class InicioComponent implements OnInit {
     }
   }
 
-  // Método para aplicar los filtros
+  // En el componente InicioComponent
+  mostrarSoloPersonalizados: boolean = false;
+
   aplicarFiltros() {
     this.pastelesFiltrados = this.pasteles.filter(pastel => {
       const cumpleCategoria =
-        this.categoriasSeleccionadas.includes('Todas') || // Si "Todas" está seleccionada
-        this.categoriasSeleccionadas.includes(pastel.categoria); // O si la categoría del pastel está seleccionada
-      const cumplePrecio = pastel.precio <= this.precioMaximo;
+        this.categoriasSeleccionadas.includes('Todas') ||
+        this.categoriasSeleccionadas.includes(pastel.categoria);
+      const cumplePrecio = pastel.esPersonalizado || pastel.precio <= this.precioMaximo;
       const cumpleBusqueda = pastel.nombre.toLowerCase().includes(this.terminoBusqueda.toLowerCase());
-      return cumpleCategoria && cumplePrecio && cumpleBusqueda;
+      const cumplePersonalizado = !this.mostrarSoloPersonalizados || pastel.esPersonalizado;
+      return cumpleCategoria && cumplePrecio && cumpleBusqueda && cumplePersonalizado;
     });
   }
 
@@ -93,5 +98,12 @@ export class InicioComponent implements OnInit {
   }
   verMas(categoria: string) {
     this.router.navigate(['/categoria', categoria]); // Redirige al componente de categoría
+  }
+  // En el componente InicioComponent
+  contactarParaPersonalizado() {
+    const numero = '4494189869';  // Reemplaza con tu número de WhatsApp
+    const mensaje = encodeURIComponent('Hola, quiero saber el precio del pastel personalizado.');
+    const url = `https://wa.me/${numero}?text=${mensaje}`;
+    window.open(url, '_blank');
   }
 }

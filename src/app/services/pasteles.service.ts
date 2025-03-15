@@ -15,6 +15,7 @@ export class PastelesService {
       sabor: 'Chocolate, Limón, Mixto',
       precio: 230.00,
       imagen: './assets/Pastel8a10personas.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -25,6 +26,7 @@ export class PastelesService {
       sabor: 'Chocolate, Limón, Mixto',
       precio: 330.00,
       imagen: './assets/Pastel12a15personas1.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -35,6 +37,7 @@ export class PastelesService {
       sabor: 'Chocolate, Limón, Mixto',
       precio: 420.00,
       imagen: './assets/Pastel18a20personas1.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -45,6 +48,7 @@ export class PastelesService {
       sabor: 'Chocolate, Limón, Mixto',
       precio: 600.00,
       imagen: './assets/Pastel25a30personas.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -55,6 +59,7 @@ export class PastelesService {
       sabor: 'Chocolate, Limón, Mixto',
       precio: 1250.00,
       imagen: './assets/Pastel50a60personas.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -65,6 +70,7 @@ export class PastelesService {
       sabor: 'Chocolate, Limón, Mixto',
       precio: 2600.00,
       imagen: './assets/Pastel50a60personas.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -73,6 +79,7 @@ export class PastelesService {
       descripcion: 'Deliciosas galletas de mantequilla con m&m, chispas, nuez y naturales de 300 grs',
       precio: 115.00,
       imagen: './assets/Galletas115con300grs.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -81,6 +88,7 @@ export class PastelesService {
       descripcion: 'Deliciosas galletas de mantequilla con m&m, chispas, nuez y naturales de 500 grs',
       precio: 190.00,
       imagen: './assets/Galletas190con500grs.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -89,6 +97,7 @@ export class PastelesService {
       descripcion: 'Delicioso panque de mantequilla con nuez de 530 grs',
       precio: 150.00,
       imagen: './assets/PanqueMantequilla530grs.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -97,6 +106,7 @@ export class PastelesService {
       descripcion: 'Delicioso panque de mantequilla con nuez de 530 grs cubierto de betún de limon o chocolate',
       precio: 180.00,
       imagen: './assets/PanqueMantequilla530grsCubierto.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: false // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -105,6 +115,7 @@ export class PastelesService {
       descripcion: 'Deliciosas galletas besos de nuez de 300grs',
       precio: 140.00,
       imagen: './assets/GalletasBesosdeNuez.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -113,6 +124,7 @@ export class PastelesService {
       descripcion: 'Deliciosos polvorones de chocolate, naranja y vainilla de 300grs',
       precio: 50.00,
       imagen: './assets/Polvoronesde300grs.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -121,6 +133,7 @@ export class PastelesService {
       descripcion: 'Deliciosos cupcakes 6 piezas',
       precio: 100.00,
       imagen: './assets/Cupcakes.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -129,6 +142,7 @@ export class PastelesService {
       descripcion: 'Deliciosas galletas besos de nuez de 500grs',
       precio: 220.00,
       imagen: './assets/GalletasBesosdeNuez.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: false // Indica si el pastel debe mostrarse en el inicio
     },
     {
@@ -138,8 +152,41 @@ export class PastelesService {
       betun: 'Endulza tu día con nuestro delicioso betún disponible:',
       sabor: 'Chocolate, Limón, Mixto',
       precio: 230.00,
-      imagen: './assets/Pastel50a60personas.jpg',
+      imagen: './assets/Pastel8a10personas2.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: false // Indica si el pastel debe mostrarse en el inicio
+    },
+    {
+      nombre: 'Pastel de 8 a 10 personas',
+      categoria: 'Pastel de 8 a 10',
+      descripcion: 'Delicioso pastel de 8 a 10 personas, decoración de la casa.',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor: 'Chocolate, Limón, Mixto',
+      precio: 230.00,
+      imagen: './assets/Pastel8a10personas3.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false // Indica si el pastel debe mostrarse en el inicio
+    },
+    {
+      nombre: 'Pastel de 1/4 plancha cuadrado de 25 a 30 personas',
+      categoria: 'Pastel de 25 a 30',
+      descripcion: 'Delicioso pastel de 1/4 plancha cuadrado rendimiento es de 25 a 30 personas, decoración de la casa',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor: 'Chocolate, Limón, Mixto',
+      precio: 600.00,
+      imagen: './assets/Pastel25a30personas2.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false // Indica si el pastel debe mostrarse en el inicio
+    },
+    {
+      nombre: 'Pastel de 8 a 10 personas personalizado',
+      categoria: 'Pastel de 8 a 10 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 8 y 10 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel8a10personasPersonalizado.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: true, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
     }
   ];
 

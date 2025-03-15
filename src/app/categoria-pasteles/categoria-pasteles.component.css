@@ -21,6 +21,9 @@
     margin-bottom: 20px; /* Espacio debajo del carousel */
 }
 
+#nombrePastel{
+    text-transform: uppercase;
+}
 
 /* Botón de regresar en una posición fija sin moverse al hacer scroll */
 .regresar-btn-container {

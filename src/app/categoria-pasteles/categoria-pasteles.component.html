@@ -53,11 +53,21 @@
         <div class="card h-100" id="colorTarjeta">
           <img [src]="pastel.imagen" class="card-img-top" alt="{{ pastel.nombre }}">
           <div class="card-body">
-            <h5 class="card-title">{{ pastel.nombre }}</h5>
+            <h5 class="card-title" id="nombrePastel">{{ pastel.nombre }}</h5>
             <p class="card-text"><strong>{{ pastel.descripcion }}</strong></p>
             <p class="card-text"><strong>{{ pastel.betun }}</strong></p>
             <p class="card-text"><strong>{{ pastel.sabor }}</strong></p>
-            <p class="text-success"><strong>Precio: ${{ pastel.precio }}</strong></p>
+            
+            <!-- Mostrar precio o mensaje personalizado -->
+            <ng-container *ngIf="pastel.esPersonalizado; else precioNormal">
+              <p class="text-warning"><strong>{{ pastel.personalizado }}</strong></p>
+              <button class="btn btn-success" (click)="contactarParaPersonalizado()">Contactar para decorado</button>
+            </ng-container>
+            <ng-template #precioNormal>
+              <p class="text-success"><strong>Precio: ${{ pastel.precio }}</strong></p>
+            </ng-template>
+          
+            <p class="card-text"><strong>{{ pastel.cambioPrecio }}</strong></p>
           </div>
         </div>
       </div>

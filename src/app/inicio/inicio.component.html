@@ -131,9 +131,19 @@
         <!-- Filtro de Precio -->
         <div class="mb-3">
           <label for="precio"><strong>Rango de Precio</strong></label>
-          <input type="range" class="form-range mb-3" min="100" max="2600" [(ngModel)]="precioMaximo" (input)="onPrecioChange($event)">
+          <input type="range" class="form-range mb-3" min="0" max="2600" [(ngModel)]="precioMaximo" (input)="onPrecioChange($event)">
           <p class="text-center"><strong>Precio máximo: ${{ precioMaximo }}</strong></p>
         </div>
+
+        <div class="mb-3">
+          <label><strong>Mostrar solo personalizados</strong></label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="filtro-personalizados"
+                   [(ngModel)]="mostrarSoloPersonalizados" (change)="aplicarFiltros()">
+            <label class="form-check-label" for="filtro-personalizados">Mostrar solo pasteles personalizados</label>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -141,17 +151,26 @@
     <div class="col-md-9">
       <h2>Nuestros Productos</h2>
       <p class="text-muted">({{ pastelesFiltrados.length }} resultados)</p>
-
-      <div class="row">
+      <div class="row"> <!-- Contenedor de la fila -->
         <div class="col-md-4 mb-4" *ngFor="let pastel of pastelesFiltrados">
           <div class="card h-100" id="colorTarjeta">
             <img [src]="pastel.imagen" class="card-img-top" alt="{{ pastel.nombre }}">
             <div class="card-body">
-              <h5 class="card-title">{{ pastel.nombre }}</h5>
+              <h5 class="card-title" id="nombrePastel">{{ pastel.nombre }}</h5>
               <p class="card-text"><strong>{{ pastel.descripcion }}</strong></p>
               <p class="card-text"><strong>{{ pastel.betun }}</strong></p>
               <p class="card-text"><strong>{{ pastel.sabor }}</strong></p>
-              <p class="text-success"><strong>Precio: ${{ pastel.precio }}</strong></p>
+              
+              <!-- Mostrar precio o mensaje personalizado -->
+              <ng-container *ngIf="pastel.esPersonalizado; else precioNormal">
+                <p class="text-warning"><strong>{{ pastel.personalizado }}</strong></p>
+                <button class="btn btn-success" (click)="contactarParaPersonalizado()">Contactar para decorado</button>
+              </ng-container>
+              <ng-template #precioNormal>
+                <p class="text-success"><strong>Precio: ${{ pastel.precio }}</strong></p>
+              </ng-template>
+        
+              <p class="card-text"><strong>{{ pastel.cambioPrecio }}</strong></p>
               <button class="btn btn-primary" (click)="verMas(pastel.categoria)">Ver Más</button>
             </div>
           </div>

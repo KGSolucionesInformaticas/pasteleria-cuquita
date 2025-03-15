@@ -30,6 +30,9 @@
     margin-bottom: 20px; /* Espacio debajo del carousel */
 }
 
+#nombrePastel{
+  text-transform: uppercase;
+}
 
 
 /*Estilos de filtrado*/
