@@ -3,8 +3,13 @@
     <div class="contenedor">
         <div class="contacto">
             <h1>CONTACTO</h1>
-            <p>Email: pastelescuquita&#64;gmail.com</p>
-            <p>Tel: 449 513 7162</p>
+            <!--<p>Email: pastelescuquita&#64;gmail.com</p>-->
+            <p>Teléfono y Whatsapp: 449 513 7162</p>
+
+            <button class="btn btn-success mt-2" (click)="contactarParaPersonalizado()">
+                <i class="bi bi-whatsapp"></i> Contactar para pedido
+            </button>
+
             <p>Dirección: Calle tamaulipas 309 pirámides,<br> Aguascalientes, Ags.</p>
         </div>
         <div class="suscribete">
@@ -44,9 +49,6 @@
                 <a [routerLink]="['/preguntasfrecuentes']">
                     <p class="metodo">Preguntas frecuentes</p>
                 </a>
-                <a [routerLink]="['/conoce-al-equipo']">
-                    <p class="politica">Conoce al equipo</p>
-                </a>
             </div>
         </div>
         <div class="visitanos">
@@ -54,7 +56,13 @@
             <p>¡Endulza tus momentos especiales con nuestros deliciosos pasteles! </p>
             <p>Ven y descubre el sabor que hará inolvidable tu celebración.</p>
         </div>
-
+    </div>
+    <div class="desarrollador">
+        <p>
+            Desarrollado por <strong>KGSolucionesInformáticas</strong> |
+            <a href="mailto:garcesdiazkevin@gmail.com">garcesdiazkevin&#64;gmail.com</a> |
+            Tel: <a href="tel:4494189869">449 418 9869</a>
+        </p>
     </div>
 
 </footer>

@@ -24,7 +24,8 @@ export class InicioComponent implements OnInit {
   terminoBusqueda: string = '';
   // En el componente InicioComponent
   mostrarSoloPersonalizados: boolean = false;
-  
+
+  deshabilitarCategorias: boolean = false;
 
   constructor(
     private pastelesService: PastelesService,
@@ -53,6 +54,15 @@ export class InicioComponent implements OnInit {
   }
 
   aplicarFiltros() {
+    // Si "Mostrar solo pasteles personalizados" está activado, restablecer la categoría a "Todas"
+    if (this.mostrarSoloPersonalizados) {
+      this.categoriasSeleccionadas = ['Todas'];
+      this.deshabilitarCategorias = true; // Deshabilitar los checkboxes de categoría
+    } else {
+      this.deshabilitarCategorias = false; // Habilitar los checkboxes de categoría
+    }
+  
+    // Aplicar los filtros
     this.pastelesFiltrados = this.pasteles.filter(pastel => {
       const cumpleCategoria =
         this.categoriasSeleccionadas.includes('Todas') ||
@@ -102,7 +112,7 @@ export class InicioComponent implements OnInit {
   }
 
   contactarParaPersonalizado(pastel: any) {
-    const phoneNumber = '4495137162'; // Reemplaza con tu número de WhatsApp
+    const phoneNumber = '4495137162'; 
     const message = encodeURIComponent(
       `Hola, estoy interesado en el pastel: ${pastel.nombre}.\n` +
       `Descripción: ${pastel.descripcion}\n` +

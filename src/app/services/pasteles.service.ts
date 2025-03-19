@@ -110,18 +110,18 @@ export class PastelesService {
       mostrarEnInicio: false // Indica si el pastel debe mostrarse en el inicio
     },
     {
-      nombre: 'Galletas besos de nuez de 300grs',
+      nombre: 'Galletas besos de nuez de 300 grs',
       categoria: 'Galletas besos de nuez',
-      descripcion: 'Deliciosas galletas besos de nuez de 300grs',
+      descripcion: 'Deliciosas galletas besos de nuez de 300 grs',
       precio: 140.00,
       imagen: './assets/GalletasBesosdeNuez.jpg',
       cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
-      nombre: 'Polvorones de chocolate, naranja y vainilla de 300grs',
+      nombre: 'Polvorones de chocolate, naranja y vainilla de 300 grs',
       categoria: 'Polvorones de 300grs',
-      descripcion: 'Deliciosos polvorones de chocolate, naranja y vainilla de 300grs',
+      descripcion: 'Deliciosos polvorones de chocolate, naranja y vainilla de 300 grs',
       precio: 50.00,
       imagen: './assets/Polvoronesde300grs.jpg',
       cambioPrecio: 'Sujeto a cambios sin previo aviso',
@@ -671,15 +671,6 @@ export class PastelesService {
       categoria: 'Cupcakes personalizados de 6 piezas',
       descripcion: 'Deléitate con Cupcakes personalizados de 6 piezas',
       personalizado: 'El precio varía de acuerdo al decorado.',
-      imagen: './assets/Cupcakes6piezasPersonalizado.jpg',
-      cambioPrecio: 'Sujeto a cambios sin previo aviso',
-      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
-      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
-    },{
-      nombre: 'Cupcakes personalizados de 6 piezas ',
-      categoria: 'Cupcakes personalizados de 6 piezas',
-      descripcion: 'Deléitate con Cupcakes personalizados de 6 piezas',
-      personalizado: 'El precio varía de acuerdo al decorado.',
       imagen: './assets/Cupcakes6piezasPersonalizado2.jpg',
       cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
@@ -710,6 +701,26 @@ export class PastelesService {
       imagen: './assets/Cupcakes6piezasPersonalizado5.jpg',
       cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 50 a 60 personas personalizado',
+      categoria: 'Pastel de 50 a 60 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 50 a 60 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel50a60personasPersonalizado5.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 40 personas personalizado',
+      categoria: 'Pastel de 40 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 40 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel40personasPersonalizado.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: true, // Indica si el pastel debe mostrarse en el inicio
       esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
     }
   ];

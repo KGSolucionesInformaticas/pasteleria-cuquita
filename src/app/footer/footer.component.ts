@@ -12,5 +12,12 @@ import { Router } from '@angular/router'; // Importar Router
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-
+  contactarParaPersonalizado() {
+    const phoneNumber = '4495137162'; 
+    const message = encodeURIComponent(
+      `Hola, estoy interesado en un pastel.`
+    );
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, '_blank'); // Abre en una nueva pestaña
+  }
 }

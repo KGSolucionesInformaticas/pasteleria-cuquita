@@ -75,63 +75,87 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="categoria-todas" value="Todas"
                    [checked]="categoriasSeleccionadas.includes('Todas')"
-                   (change)="onCategoriaChange($event, 'Todas')">
+                   (change)="onCategoriaChange($event, 'Todas')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="categoria-todas">Todas</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="categoria-8-10" value="Pastel de 8 a 10"
                    [checked]="categoriasSeleccionadas.includes('Pastel de 8 a 10')"
-                   (change)="onCategoriaChange($event, 'Pastel de 8 a 10')">
+                   (change)="onCategoriaChange($event, 'Pastel de 8 a 10')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="categoria-8-10">Pastel de 8 a 10 personas</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="categoria-12-15" value="Pastel de 12 a 15"
                    [checked]="categoriasSeleccionadas.includes('Pastel de 12 a 15')"
-                   (change)="onCategoriaChange($event, 'Pastel de 12 a 15')">
+                   (change)="onCategoriaChange($event, 'Pastel de 12 a 15')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="categoria-12-15">Pastel de 12 a 15 personas</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="categoria-18-20" value="Pastel de 18 a 20"
                    [checked]="categoriasSeleccionadas.includes('Pastel de 18 a 20')"
-                   (change)="onCategoriaChange($event, 'Pastel de 18 a 20')">
+                   (change)="onCategoriaChange($event, 'Pastel de 18 a 20')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="categoria-18-20">Pastel de 18 a 20 personas</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="categoria-25-30" value="Pastel de 25 a 30"
                    [checked]="categoriasSeleccionadas.includes('Pastel de 25 a 30')"
-                   (change)="onCategoriaChange($event, 'Pastel de 25 a 30')">
+                   (change)="onCategoriaChange($event, 'Pastel de 25 a 30')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="categoria-25-30">Pastel de 25 a 30 personas</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="categoria-50-60" value="Pastel de 50 a 60"
                    [checked]="categoriasSeleccionadas.includes('Pastel de 50 a 60')"
-                   (change)="onCategoriaChange($event, 'Pastel de 50 a 60')">
+                   (change)="onCategoriaChange($event, 'Pastel de 50 a 60')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="categoria-50-60">Pastel de 50 a 60 personas</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="categoria-100-120" value="Pastel de 100 a 120"
                    [checked]="categoriasSeleccionadas.includes('Pastel de 100 a 120')"
-                   (change)="onCategoriaChange($event, 'Pastel de 100 a 120')">
+                   (change)="onCategoriaChange($event, 'Pastel de 100 a 120')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="categoria-100-120">Pastel de 100 a 120 personas</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="Galletas de mantequilla 300 grs" value="Galletas de mantequilla 300 grs"
                    [checked]="categoriasSeleccionadas.includes('Galletas de mantequilla 300 grs')"
-                   (change)="onCategoriaChange($event, 'Galletas de mantequilla 300 grs')">
+                   (change)="onCategoriaChange($event, 'Galletas de mantequilla 300 grs')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="Galletas de mantequilla 300 grs">Galletas de mantequilla 300 grs</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="Galletas de mantequilla 500 grs" value="Galletas de mantequilla 500 grs"
                    [checked]="categoriasSeleccionadas.includes('Galletas de mantequilla 500 grs')"
-                   (change)="onCategoriaChange($event, 'Galletas de mantequilla 500 grs')">
+                   (change)="onCategoriaChange($event, 'Galletas de mantequilla 500 grs')"
+                   [disabled]="deshabilitarCategorias">
             <label class="form-check-label" for="Galletas de mantequilla 500 grs">Galletas de mantequilla 500 grs</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Panque de mantequilla con nuez de 530 grs" value="Panque de mantequilla con nuez de 530 grs"
+                   [checked]="categoriasSeleccionadas.includes('Panque de mantequilla con nuez de 530 grs')"
+                   (change)="onCategoriaChange($event, 'Panque de mantequilla con nuez de 530 grs')"
+                   [disabled]="deshabilitarCategorias">
+            <label class="form-check-label" for="Panque de mantequilla con nuez de 530 grs">Panque de mantequilla con nuez de 530 grs</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Panque de mantequilla con nuez de 530 grs" value="Panque de mantequilla con nuez de 530 grs"
+                   [checked]="categoriasSeleccionadas.includes('Panque de mantequilla con nuez de 530 grs')"
+                   (change)="onCategoriaChange($event, 'Panque de mantequilla con nuez de 530 grs')"
+                   [disabled]="deshabilitarCategorias">
+            <label class="form-check-label" for="Panque de mantequilla con nuez de 530 grs">Panque de mantequilla con nuez de 530 grs</label>
           </div>
         </div>
 
         <!-- Filtro de Precio -->
         <div class="mb-3">
           <label for="precio"><strong>Rango de Precio</strong></label>
-          <input type="range" class="form-range mb-3" min="0" max="2600" [(ngModel)]="precioMaximo" (input)="onPrecioChange($event)">
+          <!--<input type="range" class="form-range mb-3" min="0" max="2600" [(ngModel)]="precioMaximo" (input)="onPrecioChange($event)">-->
+          <input type="range" class="custom-range" min="0" max="2600" [(ngModel)]="precioMaximo" (input)="onPrecioChange($event)">
           <p class="text-center"><strong>Precio máximo: ${{ precioMaximo }}</strong></p>
         </div>
 

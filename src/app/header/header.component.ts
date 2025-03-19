@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 import { PastelesService } from '../services/pasteles.service'; // Importar el servicio
 import { FormsModule } from '@angular/forms'; // Importar FormsModule
 import { CommonModule } from '@angular/common'; // Importar CommonModule
-import { Router } from '@angular/router'; // Importar Router
+import { NavigationEnd, Router } from '@angular/router'; // Importar Router
 import { RouterModule } from '@angular/router';  // ✅ Importa RouterModule
+import { filter } from 'rxjs/operators';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -16,6 +18,7 @@ export class HeaderComponent {
 
   terminoBusqueda: string = '';
   historialBusquedas: string[] = []; // Array para almacenar el historial
+  private routerSubscription: Subscription | null = null;
 
   constructor(
     private pastelesService: PastelesService,
