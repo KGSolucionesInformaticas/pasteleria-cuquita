@@ -143,11 +143,25 @@
             <label class="form-check-label" for="Panque de mantequilla con nuez de 530 grs">Panque de mantequilla con nuez de 530 grs</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="Panque de mantequilla con nuez de 530 grs" value="Panque de mantequilla con nuez de 530 grs"
-                   [checked]="categoriasSeleccionadas.includes('Panque de mantequilla con nuez de 530 grs')"
-                   (change)="onCategoriaChange($event, 'Panque de mantequilla con nuez de 530 grs')"
+            <input class="form-check-input" type="checkbox" id="Galletas besos de nuez" value="Galletas besos de nuez"
+                   [checked]="categoriasSeleccionadas.includes('Galletas besos de nuez')"
+                   (change)="onCategoriaChange($event, 'Galletas besos de nuez')"
                    [disabled]="deshabilitarCategorias">
-            <label class="form-check-label" for="Panque de mantequilla con nuez de 530 grs">Panque de mantequilla con nuez de 530 grs</label>
+            <label class="form-check-label" for="Galletas besos de nuez">Galletas besos de nuez</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Polvorones de 300 grs" value="Polvorones de 300 grs"
+                   [checked]="categoriasSeleccionadas.includes('Polvorones de 300 grs')"
+                   (change)="onCategoriaChange($event, 'Polvorones de 300 grs')"
+                   [disabled]="deshabilitarCategorias">
+            <label class="form-check-label" for="Polvorones de 300 grs">Polvorones de 300 grs</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Cupcakes 6 piezas" value="Cupcakes 6 piezas"
+                   [checked]="categoriasSeleccionadas.includes('Cupcakes 6 piezas')"
+                   (change)="onCategoriaChange($event, 'Cupcakes 6 piezas')"
+                   [disabled]="deshabilitarCategorias">
+            <label class="form-check-label" for="Cupcakes 6 piezas">Cupcakes 6 piezas</label>
           </div>
         </div>
 

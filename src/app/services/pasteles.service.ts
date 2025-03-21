@@ -120,7 +120,7 @@ export class PastelesService {
     },
     {
       nombre: 'Polvorones de chocolate, naranja y vainilla de 300 grs',
-      categoria: 'Polvorones de 300grs',
+      categoria: 'Polvorones de 300 grs',
       descripcion: 'Deliciosos polvorones de chocolate, naranja y vainilla de 300 grs',
       precio: 50.00,
       imagen: './assets/Polvoronesde300grs.jpg',
@@ -137,9 +137,9 @@ export class PastelesService {
       mostrarEnInicio: true // Indica si el pastel debe mostrarse en el inicio
     },
     {
-      nombre: 'Galletas besos de nuez de 500grs',
+      nombre: 'Galletas besos de nuez de 500 grs',
       categoria: 'Galletas besos de nuez',
-      descripcion: 'Deliciosas galletas besos de nuez de 500grs',
+      descripcion: 'Deliciosas galletas besos de nuez de 500 grs',
       precio: 220.00,
       imagen: './assets/GalletasBesosdeNuez.jpg',
       cambioPrecio: 'Sujeto a cambios sin previo aviso',
