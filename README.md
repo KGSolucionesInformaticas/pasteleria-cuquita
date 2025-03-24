@@ -1,31 +1,64 @@
-<<<<<<< HEAD
-# pasteleria-cuquita
-=======
-# PasteleriaCuquita
+# Pastelería Cuquita 🍰
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.12.
+Este es un proyecto desarrollado con Angular 17 para la página web de la **Pastelería Cuquita**, el cual permite promocionar productos y mostrar su ubicación.  
 
-## Development server
+El sitio web está publicado en **GitHub Pages** utilizando la carpeta `/docs` para alojar los archivos de producción.  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Tecnologías utilizadas  
+- **Angular 17** (Framework frontend)  
+- **TypeScript** (Lenguaje de programación)  
+- **GitHub Pages** (Hosting del sitio web)  
 
-## Code scaffolding
+## 👅 Clonar el repositorio  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para obtener una copia local del proyecto, ejecuta el siguiente comando:  
 
-## Build
+```bash
+git clone [URL_DEL_REPOSITORIO]
+cd pasteleria-cuquita
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🔧 Construcción y despliegue  
 
-## Running unit tests
+Para publicar los cambios en producción, sigue estos pasos:  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 1️⃣ **Construir el proyecto**  
+Ejecuta el siguiente comando para generar los archivos de producción en la carpeta `docs`:  
 
-## Running end-to-end tests
+```bash
+ng build --configuration=production --base-href /pasteleria-cuquita/
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 2️⃣ **Crear el archivo `404.html`**  
+GitHub Pages necesita un archivo `404.html` para manejar correctamente las rutas en una SPA (Single Page Application). Copia el contenido de `index.html` en `docs/404.html`:  
 
-## Further help
+```bash
+cp docs/index.html docs/404.html
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> Kevin
+### 3️⃣ **Subir los cambios a GitHub Pages**  
+Ejecuta los siguientes comandos para enviar los cambios a la rama `github-pages`:  
+
+```bash
+git add .
+git commit -m "Nuevo comentario de cambios"
+git push origin github-pages
+```
+
+Asegúrate de que la configuración de GitHub Pages en el repositorio apunte a la carpeta `/docs` dentro de la rama `github-pages`.
+
+## 🛠️ Desarrollo local  
+Si deseas ejecutar el proyecto en tu entorno local, usa el siguiente comando:  
+
+```bash
+ng serve -O
+```
+
+Luego, abre en tu navegador: `http://localhost:4200/`.
+
+## 📌 Información adicional  
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión **17.3.12**.  
+
+## 📄 Licencia  
+Este proyecto es de código abierto y puede ser utilizado según los términos de la licencia del repositorio.  
+
