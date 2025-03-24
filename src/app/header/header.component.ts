@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { PastelesService } from '../services/pasteles.service'; // Importar el servicio
 import { FormsModule } from '@angular/forms'; // Importar FormsModule
 import { CommonModule } from '@angular/common'; // Importar CommonModule
-import { Router } from '@angular/router'; // Importar Router
+import { NavigationEnd, Router } from '@angular/router'; // Importar Router
+import { RouterModule } from '@angular/router';  // ✅ Importa RouterModule
+import { filter } from 'rxjs/operators';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
@@ -15,6 +18,7 @@ export class HeaderComponent {
 
   terminoBusqueda: string = '';
   historialBusquedas: string[] = []; // Array para almacenar el historial
+  private routerSubscription: Subscription | null = null;
 
   constructor(
     private pastelesService: PastelesService,
@@ -31,6 +35,13 @@ export class HeaderComponent {
   // Método para buscar pasteles
   buscarPasteles() {
     this.pastelesService.actualizarTerminoBusqueda(this.terminoBusqueda);
-    this.router.navigate(['/inicio']); // Redirigir al componente de inicio
+
+    // Verificar la ruta actual
+    const rutaActual = this.router.url;
+
+    // Redirigir solo si no está en el componente de categoría
+    if (!rutaActual.startsWith('/categoria')) {
+      this.router.navigate(['/inicio']); // Redirigir al componente de inicio
+    }
   }
 }

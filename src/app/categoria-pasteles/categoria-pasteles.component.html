@@ -1,0 +1,76 @@
+<!-- Contenedor del botón de regresar -->
+<div class="regresar-btn-container">
+    <a [routerLink]="['/inicio']" class="btn btn-light">
+      <i class="bi bi-arrow-left"></i> Regresar
+    </a>
+</div>
+
+<div class="container-fluid p-0">
+    <div class="row justify-content-center" id="titulopasteleria">
+      <div class="col-md-12 text-center mb-4" style="background-color: #f8f9fa; padding: 20px;">
+        <h1 class="display-4" style="color: #915817;">Pastelería Cuquita</h1>
+        <p class="lead">Descubre nuestra deliciosa selección de pasteles.</p>
+      </div>
+    </div>
+</div>
+
+<!-- Botón para abrir el modal (opcional) -->
+<div class="text-center mt-3">
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#alertaModal">
+      Ver alerta importante
+    </button>
+</div>
+  
+<!-- Alerta Modal de Bootstrap -->
+<div class="modal fade" id="alertaModal" tabindex="-1" aria-labelledby="alertaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content alerta-modal">
+        <div class="modal-header alerta-header">
+          <h5 class="modal-title" id="alertaModalLabel">Aviso importante</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body alerta-body">
+          🚨🚨 Para todos los pedidos especiales se pide un anticipo, que podrá realizarse por transferencia o entregándolo directamente en nuestra tienda. Esto se hace para evitar que se aparten productos y luego no se recojan, lo cual nos impide venderlos a otros clientes, por su comprensión muchas gracias. 🚨
+          <br><br>
+          <strong>NOTA:</strong> Mandar mensaje para checar disponibilidad en agenda.
+        </div>
+        <div class="modal-footer alerta-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="centrado">
+    <h2>Nuestros Productos</h2>
+    <p class="text-muted">({{ pastelesFiltrados.length }} resultados)</p>
+</div>
+<div class="container mt-4">
+    <h2>{{ categoria }}</h2>
+    <div class="row">
+      <div class="col-sm-6 col-md-3 mb-4" *ngFor="let pastel of pastelesFiltrados">
+        <div class="card h-100" id="colorTarjeta">
+          <img [src]="pastel.imagen" class="card-img-top" alt="{{ pastel.nombre }}">
+          <div class="card-body">
+            <h5 class="card-title" id="nombrePastel">{{ pastel.nombre }}</h5>
+            <p class="card-text"><strong>{{ pastel.descripcion }}</strong></p>
+            <p class="card-text"><strong>{{ pastel.betun }}</strong></p>
+            <p class="card-text"><strong>{{ pastel.sabor }}</strong></p>
+            
+            <!-- Mostrar precio o mensaje personalizado -->
+            <ng-container *ngIf="pastel.esPersonalizado; else precioNormal">
+              <p class="text-success"><strong>{{ pastel.personalizado }}</strong></p>
+              <button class="btn btn-success mt-2" (click)="contactarParaPersonalizado(pastel)">
+                <i class="bi bi-whatsapp"></i> Contactar para decorado
+              </button>
+            </ng-container>
+            <ng-template #precioNormal>
+              <p class="text-success"><strong>Precio: ${{ pastel.precio }}</strong></p>
+            </ng-template>
+          
+            <p class="card-text"><strong>{{ pastel.cambioPrecio }}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

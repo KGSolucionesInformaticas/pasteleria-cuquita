@@ -3,8 +3,13 @@
     <div class="contenedor">
         <div class="contacto">
             <h1>CONTACTO</h1>
-            <p>Email: patelescuquita&#64;gmail.com</p>
-            <p>Tel: 449 513 7162</p>
+            <!--<p>Email: pastelescuquita&#64;gmail.com</p>-->
+            <p>Teléfono y Whatsapp: 449 513 7162</p>
+
+            <button class="btn btn-success mt-2" (click)="contactarParaPersonalizado()">
+                <i class="bi bi-whatsapp"></i> Contactar para pedido
+            </button>
+
             <p>Dirección: Calle tamaulipas 309 pirámides,<br> Aguascalientes, Ags.</p>
         </div>
         <div class="suscribete">
@@ -13,7 +18,7 @@
                 <p></p>
                 <div class="form-row">
                     <div class="form-group col-md-12">
-                        <p>Más de 1000 personas como tú han comprado en Pastelería Cuquita para disitntos eventos</p>
+                        <p>Más de 1000 personas como tú han comprado en Pastelería Cuquita para distintos eventos</p>
                     </div>
                 </div>
                 <br>
@@ -21,31 +26,28 @@
             <div class="iconos">
                 <div class="facebook">
                     <h3>FACEBOOK</h3>
-                    <a href="https://www.facebook.com/profile.php?id=100064110156466&locale=es_LA"><img src="../../assets/facebook.png" alt="INSTAGRAM" width="30%" height="50%"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100064110156466&locale=es_LA"><img src="./assets/facebook.png" alt="FACEBOOK" width="30%" height="50%"></a>
                 </div>
                 <div class="instagram">
                     <h3>INSTAGRAM</h3>
-                    <a href="https://www.instagram.com/pasteleriacuquita/"><img src="../../assets/Instagra_.png" alt="INSTAGRAM" width="30%" height="50%"></a>
+                    <a href="https://www.instagram.com/pasteleriacuquita/"><img src="./assets/instagra.png" alt="INSTAGRAM" width="30%" height="50%"></a>
                 </div>
                 <div class="tiktok">
                     <h3>TIKTOK</h3>
-                    <a href="https://www.tiktok.com/@pasteleria_cuquita?_t=8rKn2IEc1W4&_r=1"><img src="../../assets/tiktok.png" alt="INSTAGRAM" width="30%" height="50%"></a>
+                    <a href="https://www.tiktok.com/@pasteleria_cuquita?_t=8rKn2IEc1W4&_r=1"><img src="./assets/tiktok.png" alt="TIKTOK" width="30%" height="50%"></a>
                 </div>
                 <br><br>
             </div>
 
             <div class="enlaces">
-                <a href="/inicio">
+                <a [routerLink]="['/inicio']">
                     <p class="envio">Inicio </p>
                 </a>
-                <a href="/ubicacion">
+                <a [routerLink]="['/ubicacion']">
                     <p class="pregunta">Ubicación</p>
                 </a>
-                <a href="#">
+                <a [routerLink]="['/preguntasfrecuentes']">
                     <p class="metodo">Preguntas frecuentes</p>
-                </a>
-                <a href="#">
-                    <p class="politica">Conoce al equipo</p>
                 </a>
             </div>
         </div>
@@ -54,7 +56,12 @@
             <p>¡Endulza tus momentos especiales con nuestros deliciosos pasteles! </p>
             <p>Ven y descubre el sabor que hará inolvidable tu celebración.</p>
         </div>
-
+    </div>
+    <div class="desarrollador">
+        <p>
+            Copyright © 2025 Pasteleria Cuquita. Todos los derechos reservados. Desarrollado por <strong>KGSolucionesInformáticas</strong> |
+            <a href="mailto:garcesdiazkevin@gmail.com">garcesdiazkevin&#64;gmail.com</a>
+        </p>
     </div>
 
 </footer>

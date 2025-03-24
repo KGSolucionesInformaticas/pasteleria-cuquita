@@ -11,6 +11,7 @@ import * as L from 'leaflet';
 })
 export class UbicacionComponent implements OnInit {
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.initMap();
   }
 

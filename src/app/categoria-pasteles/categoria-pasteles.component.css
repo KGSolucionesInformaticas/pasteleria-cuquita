@@ -1,0 +1,92 @@
+.card-img-top {
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin distorsionarse */
+}
+.centrado{
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+#colorTarjeta{
+    background-color: #ffe6c9;
+}
+#alerta{
+    margin-top: 3%;
+}
+
+#titulopasteleria {
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 20px; /* Espacio debajo del carousel */
+}
+
+#nombrePastel{
+    text-transform: uppercase;
+}
+
+/* Botón de regresar en una posición fija sin moverse al hacer scroll */
+.regresar-btn-container {
+    position: absolute;
+    top: 13%; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde el borde izquierdo */
+    z-index: 1000; /* Para estar por encima de otros elementos */
+}
+
+/* Estilo del botón */
+.regresar-btn-container .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el ícono y el texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #a1601f; /* Color de fondo personalizado (naranja) */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover */
+.regresar-btn-container .btn:hover {
+    background-color: #5c3003; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo del ícono */
+.regresar-btn-container .bi-arrow-left {
+    font-size: 1.5rem; /* Tamaño del ícono */
+    color: white; /* Color de la flecha */
+}
+
+
+.alerta-modal {
+    background-color: #f5e6da; /* Color cremita */
+    border: 2px solid #915817; /* Color café */
+    border-radius: 10px;
+}
+  
+.alerta-header {
+    background-color: #915817; /* Color café */
+    color: #fff; /* Texto blanco */
+    border-bottom: 2px solid #7b4c2b; /* Café oscuro */
+}
+  
+.alerta-body {
+    color: #603e2e; /* Café más oscuro para el texto */
+    font-size: 1.1rem;
+}
+  
+.alerta-footer {
+    background-color: #f5e6da; /* Color cremita */
+}
+  
+.alerta-footer .btn-secondary {
+    background-color: #915817; /* Botón café */
+    color: #fff;
+    border: none;
+}
+  
+.alerta-footer .btn-secondary:hover {
+    background-color: #7b4c2b; /* Café oscuro al pasar el mouse */
+}
+  
