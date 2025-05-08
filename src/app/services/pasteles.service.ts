@@ -722,7 +722,205 @@ export class PastelesService {
       cambioPrecio: 'Sujeto a cambios sin previo aviso',
       mostrarEnInicio: true, // Indica si el pastel debe mostrarse en el inicio
       esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
-    }
+    },
+    {
+      nombre: 'Pastel de 8 a 10 personas personalizado',
+      categoria: 'Pastel de 8 a 10 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 8 a 10 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel8a10personasPersonalizado18.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 8 a 10 personas personalizado',
+      categoria: 'Pastel de 8 a 10 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 8 a 10 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel8a10personasPersonalizado19.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 8 a 10 personas personalizado',
+      categoria: 'Pastel de 8 a 10 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 8 a 10 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel8a10personasPersonalizado20.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 8 a 10 personas personalizado',
+      categoria: 'Pastel de 8 a 10 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 8 a 10 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel8a10personasPersonalizado21.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 8 a 10 personas personalizado',
+      categoria: 'Pastel de 8 a 10 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 8 a 10 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel8a10personasPersonalizado22.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 25 a 30 personas personalizado',
+      categoria: 'Pastel de 25 a 30 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 25 a 30 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel25a30personasPersonalizado6.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 25 a 30 personas personalizado',
+      categoria: 'Pastel de 25 a 30 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 25 a 30 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel25a30personasPersonalizado10.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 25 a 30 personas personalizado',
+      categoria: 'Pastel de 25 a 30 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 25 a 30 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel25a30personasPersonalizado11.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 25 a 30 personas personalizado',
+      categoria: 'Pastel de 25 a 30 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 25 a 30 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel25a30personasPersonalizado12.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 25 a 30 personas personalizado',
+      categoria: 'Pastel de 25 a 30 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 25 a 30 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel25a30personasPersonalizado13.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 1/4 plancha cuadrado de 25 a 30 personas',
+      categoria: 'Pastel de 25 a 30',
+      descripcion: 'Delicioso pastel de 1/4 plancha cuadrado rendimiento es de 25 a 30 personas, decoración de la casa',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor: 'Chocolate, Limón, Mixto',
+      precio: 600.00,
+      imagen: './assets/Pastel25a30personas3.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false // Indica si el pastel debe mostrarse en el inicio
+    },
+    {
+      nombre: 'Pastel de 1/2 plancha cuadrado de 50 a 60 personas',
+      categoria: 'Pastel de 50 a 60',
+      descripcion: 'Delicioso pastel de 1/2 plancha cuadrado rendimiento es de 50 a 60 personas, decoración de la casa',
+      betun: 'Endulza tu día con nuestro delicioso betún disponible:',
+      sabor: 'Chocolate, Limón, Mixto',
+      precio: 1250.00,
+      imagen: './assets/Pastel50a60personas2.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false // Indica si el pastel debe mostrarse en el inicio
+    },
+    {
+      nombre: 'Pastel de 50 a 60 personas personalizado',
+      categoria: 'Pastel de 50 a 60 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 50 a 60 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel50a60personasPersonalizado6.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 70 a 80 personas personalizado',
+      categoria: 'Pastel de 70 a 80 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 70 a 80 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel70a80personasPersonalizado.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: true, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 12 a 15 personas personalizado',
+      categoria: 'Pastel de 12 a 15 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 12 a 15 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel12a15personasPersonalizado7.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },
+    {
+      nombre: 'Pastel de 18 a 20 personas personalizado',
+      categoria: 'Pastel de 18 a 20 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 18 a 20 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel18a20personasPersonalizado10.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },{
+      nombre: 'Cupcakes personalizados de 6 piezas ',
+      categoria: 'Cupcakes personalizados de 6 piezas',
+      descripcion: 'Deléitate con Cupcakes personalizados de 6 piezas',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Cupcakes6piezasPersonalizado6.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },{
+      nombre: 'Cupcakes personalizados de 6 piezas ',
+      categoria: 'Cupcakes personalizados de 6 piezas',
+      descripcion: 'Deléitate con Cupcakes personalizados de 6 piezas',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Cupcakes6piezasPersonalizado7.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },{
+      nombre: 'Cupcakes personalizados de 6 piezas ',
+      categoria: 'Cupcakes personalizados de 6 piezas',
+      descripcion: 'Deléitate con Cupcakes personalizados de 6 piezas',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Cupcakes6piezasPersonalizado8.jpg',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true // Nueva propiedad para identificar pasteles personalizados
+    },{
+      nombre: 'Pastel de 200 personas personalizado',
+      categoria: 'Pastel de 200 personalizado',
+      descripcion: 'Deléitate con un exquisito pastel personalizado, ideal para compartir entre 200 personas.',
+      personalizado: 'El precio varía de acuerdo al decorado.',
+      imagen: './assets/Pastel200personasPersonalizado.png',
+      cambioPrecio: 'Sujeto a cambios sin previo aviso',
+      mostrarEnInicio: true, // Indica si el pastel debe mostrarse en el inicio
+      esPersonalizado: true, // Nueva propiedad para identificar pasteles personalizados
+    },
   ];
 
   // BehaviorSubject para manejar el término de búsqueda
