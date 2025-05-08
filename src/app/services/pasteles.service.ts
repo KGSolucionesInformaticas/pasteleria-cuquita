@@ -918,7 +918,7 @@ export class PastelesService {
       personalizado: 'El precio varía de acuerdo al decorado.',
       imagen: './assets/Pastel200personasPersonalizado.png',
       cambioPrecio: 'Sujeto a cambios sin previo aviso',
-      mostrarEnInicio: true, // Indica si el pastel debe mostrarse en el inicio
+      mostrarEnInicio: false, // Indica si el pastel debe mostrarse en el inicio
       esPersonalizado: true, // Nueva propiedad para identificar pasteles personalizados
     },
   ];
